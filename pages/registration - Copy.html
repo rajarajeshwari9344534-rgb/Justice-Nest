@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Justice Nest – Lawyer Registration</title>
+  <link rel="stylesheet" href="../css/registration.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo-mark">⚖️</div>
+        <div class="brand-text">
+          <div class="brand-title">Justice Nest</div>
+        </div>
+      </div>
+
+      <nav class="primary-nav" aria-label="Main">
+        <a class="nav-link" href="../index.html">Home</a>
+        <a class="nav-link" href="../pages/lawyer.html">Find Lawyers</a>
+        <a class="nav-link active" href="../pages/registration.html">Lawyers Registration</a>
+        <a class="nav-link" href="../pages/list.html">Complaint list</a>
+        <a class="nav-link" href="../pages/about.html">About</a>
+      </nav>
+
+      <a class="btn pill register" href="../pages/complaint.html">Register Complaint</a>
+      <a class="btn pill register" href="../pages/login.html">Login/Signup</a>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <h1>Register as a Lawyer</h1>
+    <p>Join Justice Nest to provide support and legal guidance for those in need.</p>
+  </section>
+
+  <!-- ===== FORM ===== -->
+  <main class="container">
+    <div class="form-card">
+      <h2>Lawyer Registration Form</h2>
+      <form action="#" method="post" class="register-form">
+
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your full name" required minlength="3" title="Enter your full name (min 3 letters)">
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email address" required title="Enter a valid email address">
+
+        <label>Phone Number</label>
+        <input type="tel" placeholder="+91 9876543210" required 
+               pattern="[6-9]{1}[0-9]{9}" 
+               title="Enter a valid 10-digit Indian phone number">
+
+        <label>City</label>
+        <input type="text" placeholder="Your city or region" required minlength="2" title="Enter your city">
+
+        <label>Specialization</label>
+        <input type="text" placeholder="e.g. Dowry, Domestic Violence, Family Law" required minlength="3">
+
+        <label>Years of Experience</label>
+        <input type="number" placeholder="e.g. 10" required min="1" title="Enter at least 1 year experience">
+
+        <label>Fee Range</label>
+        <input type="text" placeholder="e.g. ₹3000 - ₹7000 / Pro bono" required minlength="2" title="Enter your fee range">
+
+        <button type="submit" class="btn-register">Register</button>
+      </form>
+
+      <p class="note">Already registered? <a href="../pages/login.html">Login here</a></p>
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-bottom">
+      © 2025 Justice Nest. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
