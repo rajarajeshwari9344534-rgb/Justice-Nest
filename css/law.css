@@ -92,8 +92,15 @@ body{
   color:white;text-align:center;
   padding:60px 20px;
 }
-.hero h1{font-size:36px;font-weight:800;margin-bottom:12px}
-.hero p{font-size:18px;color:#e3eaf3;max-width:700px;margin:0 auto}
+.hero h1{
+  font-size:36px;
+  font-weight:800;
+  margin-bottom:12px
+}
+.hero p{font-size:18px;
+  color:#e3eaf3;
+  max-width:700px;margin:0 auto
+}
 
 /* LAWS SECTION */
 .laws-section{
