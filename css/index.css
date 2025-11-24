@@ -296,7 +296,7 @@ html, body {
 
 .stat {
   text-align: center;
-  animation: fadeInUp 1s ease;
+  animation: 1s ease;
 }
 
 .stat-num {
