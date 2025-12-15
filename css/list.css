@@ -130,7 +130,7 @@ html, body {
 }
 
 .complaint-table tr:hover {
-  background: #f9fafb;
+  background: #8bbdf0;
 }
 
 .status {
@@ -139,6 +139,22 @@ html, body {
   font-size: 13px;
   font-weight: 600;
 }
+
+.bnt{
+  background-color: #45ff74;
+  height: 30px;
+  width: 60px;
+  border-radius: 20px;
+}
+
+.bnt2{
+  background-color: #de0000;
+  height: 30px;
+  width: 60px;
+  border-radius: 20px;
+  
+}
+
 
 .status.pending { background: #fff4ce; color: #b7791f; }
 .status.resolved { background: #dcfce7; color: #166534; }
