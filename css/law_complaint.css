@@ -1,27 +1,49 @@
+/* ================================
+   Justice Nest — Complaint Page CSS
+================================ */
+
 /* RESET */
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
 html, body {
   height: 100%;
-  font-family: "Poppins", "Inter", system-ui, sans-serif;
-  color: #1e293b;
-  background-color: #fff;
-  scroll-behavior: smooth;
 }
 
+/* BASE */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: #f5f6f7;
+  color: #222;
+  line-height: 1.5;
+}
 
-/* ========== HEADER ========== */
+/* LINKS & BUTTON RESET */
+a {
+  text-decoration: none;
+  color: inherit;
+  
+}
+
+button {
+  font: inherit;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+/* ================================
+   NAVBAR
+================================ */
 .site-header {
   position: sticky;
   top: 0;
   z-index: 100;
   background: #ffffffcc;
+  backdrop-filter: blur(8px);
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
-  transition: 0.3s ease;
 }
 
 .header-inner {
@@ -41,6 +63,7 @@ html, body {
 
 .logo-mark {
   font-size: 28px;
+  color: #0a63d9;
   font-weight: 800;
 }
 
@@ -48,19 +71,18 @@ html, body {
   font-weight: 700;
   font-size: 20px;
   color: #0a2540;
-  }
+}
 
-/* Nav */
 .primary-nav {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
 }
 
 .nav-link {
-  text-decoration: none;
-  color: #0f0f10;
+  color: #334155;
   font-weight: 600;
+  position: relative;
   transition: color 0.3s ease;
 }
 
@@ -69,25 +91,44 @@ html, body {
   color: #0b73ff;
 }
 
-.btn {
-  display: inline-block;
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #0a63d9, #0b73ff);
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.nav-btn {
   padding: 10px 22px;
   border-radius: 30px;
   font-weight: 600;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.btn{
   background: linear-gradient(90deg, #0a63d9, #0b73ff);
   color: #fff;
   box-shadow: 0 6px 14px rgba(11,115,255,0.25);
+  transition: 0.3s ease;
 }
 
-.btn:hover {
+.nav-btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(11,115,255,0.35);
 }
+
+h2 {
+  margin-left: 50px;  
+  color: #1e3a8a;
+  margin-bottom: 20px;
+}
+
 
 /* ===== HERO ===== */
 .hero {
@@ -147,6 +188,30 @@ html, body {
 .status.resolved { background: #dcfce7; color: #166534; }
 .status.review { background: #e0f2fe; color: #0369a1; }
 
+
+
+/* Buttons */
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: bold;
+  background: #2563eb;
+  color: white;
+}
+
+.btn:hover {
+  background: #1e40af;
+}
+
+
 /* ===== FOOTER ===== */
 .footer {
   text-align: center;
@@ -160,3 +225,6 @@ html, body {
 td a{
   text-decoration: none;
 }
+
+
+

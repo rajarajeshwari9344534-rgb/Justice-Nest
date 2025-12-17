@@ -51,6 +51,7 @@
   <label>Email Address </label>
   <input type="email" name="email" placeholder="your.email@example.com" title="Enter a valid email address" required>
 
+
   <label>Phone Number </label>
   <input type="tel" name="phone" placeholder="+91-9876543210" pattern="^\+91[-\s]?[0-9]{10}$" title="Phone number must be 10 digits with +91" required>
 
@@ -63,7 +64,12 @@
       <label>State </label>
       <input type="text" name="state" placeholder="Enter state" pattern="[A-Za-z\s]{2,}" title="State name should contain only letters" required>
     </div>
+    <div>
+      <label>Gender</label>
+      <input type="text" name="gender" placeholder="Enter Gender" pattern="[A-Za-z\s]{2,}" title="gender should contain only letters" required>
+    </div>
   </div>
+
 
   <label>Complaint Details </label>
   <textarea name="details" placeholder="Please describe your situation in detail. Include dates, locations, and any relevant information that will help us assist you better." minlength="20" title="Please enter at least 20 characters" required></textarea>
