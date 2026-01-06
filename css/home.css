@@ -179,7 +179,7 @@ h2 {
 }
 
 .accept {
-  background: #0ea5e9;
+  background: #02a53b;
 }
 
 .reject {
@@ -187,7 +187,7 @@ h2 {
 }
 
 .accept:hover {
-  background: #0284c7;
+  background: #96f8bd;
 }
 
 .reject:hover {
