@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +8,6 @@
   <link rel="stylesheet" href="../css/list.css">
 </head>
 <body>
-
 
 <!-- NAVBAR -->
 <header class="site-header">
@@ -20,9 +20,9 @@
     </div>
 
     <nav class="primary-nav" aria-label="Main">
-      <a class="nav-link " href="../index.html">Home</a>
+      <a class="nav-link" href="../index.html">Home</a>
       <a class="nav-link" href="../pages/lawyer.html">Find Lawyers</a>
-      <a class="nav-link active" href="../pages/list.html">Complaint list</a>
+      <a class="nav-link active" href="../pages/list.html">My Complaint</a>
       <a class="nav-link" href="../pages/about.html">About</a>
     </nav>
 
@@ -31,66 +31,47 @@
   </div>
 </header>
 
-  <!-- ===== PAGE TITLE ===== -->
   <section class="hero">
     <h1>Complaint List</h1>
-    <p>All submitted complaints are listed below for reference and action.</p>
-  </section>
+    <p> submitted complaint are listed below for reference and action.</p>
+  </section>  
 
-  <!-- ===== TABLE SECTION ===== -->
-  <main class="container">
-    <div class="table-card">
-      <table class="complaint-table">
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Complainant Name</th>
-            <th>Location</th>
-            <th>Complaint Type</th>
-            <th>Date Submitted</th>
-            <th>View</th>
-            <th>Status</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>01</td>
-            <td>Anjali Sharma</td>
-            <td>Chennai, TN</td>
-            <td>Dowry Harassment</td>
-            <td>02 Nov 2025</td>
-            <td><a href="../pages/message.html">view</a></td>
-            <td><span class="status pending">Pending</span></td>
-          </tr>
-          <tr>
-            <td>02</td>
-            <td>Priya Verma</td>
-            <td>Delhi, DL</td>
-            <td>Domestic Violence</td>
-            <td>29 Oct 2025</td>
-            <td><a href="../pages/message.html">view</a></td>
-            <td><span class="status resolved">Resolved</span></td>
-          </tr>
-          <tr>
-            <td>03</td>
-            <td>Ritika Singh</td>
-            <td>Pune, MH</td>
-            <td>Legal Aid Request</td> 
-            <td>27 Oct 2025</td>
-            <td><a href="../pages/message.html">view</a></td>
-            <td><span class="status review">Review</span></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </main>
 
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <div class="footer-bottom">
-      © 2025 Justice Nest. All rights reserved.
+<!-- MAIN CONTENT -->
+<main class="page-wrapper">
+  <h2 class="page-title">My Complaints</h2>
+
+  <div class="complaint-container">
+
+    <!-- Example Complaint Card 1 -->
+    <div class="complaint-card">
+      <div class="card-header">
+        <h3>Ravi Kumar</h3>
+        
+      </div>
+
+     <div class="card-body">
+        <p><strong>Email:</strong> sita@gmail.com</p>
+        <p><strong>Phone:</strong> +91-9876501234</p>
+        <p><strong>City:</strong> Coimbatore</p>
+        <p><strong>State:</strong> Tamil Nadu</p>
+        <p><strong>Gender:</strong> Female</p>
+        <div class="description">
+          Water supply not available for 2 days.
+        </div>
+      </div>
+
+      <div class="card-footer">
+         <span class="status pending">Pending</span>
+        <button class="edit-btn">Edit</button>
+        <button class="delete-btn">Delete</button>
+      </div>
     </div>
-  </footer>
+
+
+  </div>
+</main>
 
 </body>
 </html>
+

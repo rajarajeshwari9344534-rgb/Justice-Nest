@@ -1,26 +1,17 @@
-/* ================================
-   Justice Nest — Complaint Page CSS
-================================ */
-
 /* RESET */
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-html, body {
-  height: 100%;
-}
-
-/* BASE */
 body {
-  margin: 0;
-  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  font-family: "Segoe UI", Arial, sans-serif;
   background: #f5f6f7;
   color: #222;
-  line-height: 1.5;
 }
 
-/* LINKS & BUTTON RESET */
+/* ===== NAVBAR ===== */
 a {
   text-decoration: none;
   color: inherit;
@@ -128,102 +119,58 @@ h2 {
   color: #1e3a8a;
   margin-bottom: 20px;
 }
-
-
 /* ===== HERO ===== */
 .hero {
   text-align: center;
-  padding: 50px 20px;
-  background: linear-gradient(90deg, #0078ff, #0b73ff);
+  padding: 90px 20px;
+  background: linear-gradient(90deg,#0078ff,#0b73ff);
   color: #fff;
 }
 
 .hero h1 {
-  font-size: 32px;
+  font-size: 42px;
   margin-bottom: 10px;
 }
 
-/* ===== TABLE CARD ===== */
-.table-card {
-  max-width: 1000px;
+/* ===== MAIN ===== */
+.page-wrapper {
+  max-width: 1200px;
   margin: 40px auto;
+  padding: 0 28px;
+}
+
+/* ===== COMPLAINT GRID ===== */
+.complaint-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(1000px,1fr));
+  gap: 28px;
+}
+
+.complaint-card {
   background: #fff;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.08);
 }
 
-.complaint-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.complaint-table th, .complaint-table td {
-  padding: 14px 18px;
-  text-align: left;
-  border-bottom: 1px solid #e2e8f0;
-}
-
-.complaint-table th {
-  background: #f1f5f9;
-  font-weight: 700;
-  color: #334155;
-}
-
-.complaint-table tr:hover {
-  background: #8bbdf0;
-}
-
-.status {
-  padding: 6px 12px;
-  border-radius: 20px;
-  font-size: 13px;
-  font-weight: 600;
-}
-
-
-
-
-.status.pending { background: #fff4ce; color: #b7791f; }
-.status.resolved { background: #dcfce7; color: #166534; }
-.status.review { background: #e0f2fe; color: #0369a1; }
-
-
-
-/* Buttons */
-.actions {
+.card-header {
   display: flex;
   justify-content: space-between;
-  margin-top: 15px;
-}
-
-.btn {
-  text-decoration: none;
-  padding: 6px 12px;
-  border-radius: 6px;
-  font-size: 13px;
-  font-weight: bold;
-  background: #2563eb;
-  color: white;
-}
-
-.btn:hover {
-  background: #1e40af;
+  margin-bottom: 12px;
 }
 
 
-/* ===== FOOTER ===== */
-.footer {
-  text-align: center;
-  padding: 20px;
-  background: #f1f5f9;
-  color: #475569;
+.card-body p {
   font-size: 14px;
-  margin-top: 40px;
+  margin-bottom: 6px;
 }
 
-td a{
-  text-decoration: none;
+.description {
+  margin-top: 12px;
+  padding: 12px;
+  background: #f8fafc;
+  border-left: 4px solid #0b73ff;
+  border-radius: 8px;
 }
 
 
